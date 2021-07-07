@@ -1,0 +1,39 @@
+.block-wrapper{
+  text-align: center;
+}
+
+.visualBlock{
+  margin: 0 10px 0 10px;
+  display: inline-block;
+}
+
+.invisibleBlock{
+  display: none;
+}
+
+.visualBlock:nth-child(4){
+  padding-left: 25px;
+}
+
+.legend-wrapper{
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.legend-item{
+  margin: 0 5px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+#f1{
+  background-color: rgb(85,114,195);
+}
+
+#f2{
+  background-color: rgb(147,203,121);
+}
+
+#f3{
+  background-color: rgb(249,199,97);
+}

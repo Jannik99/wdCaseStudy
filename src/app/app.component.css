@@ -1,0 +1,23 @@
+.pagetitlewrapper{
+  text-align: center;
+  padding: 10px 0;
+}
+
+.row{
+  min-height: 70%;
+}
+
+.page{
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  background: linear-gradient(127deg, rgba(75, 185, 195, 0.9), rgba(61, 209, 174, 0.9)) fixed;
+}
+.navbar-wrapper, .router-wrapper{
+  background-color: rgba(120,120,120,0.5);
+}
+
+.router-wrapper{
+  margin: 0 20px;
+  padding: 10px;
+}

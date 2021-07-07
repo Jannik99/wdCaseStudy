@@ -1,0 +1,30 @@
+<div class="input-group mb-3">
+  <select #select1 (change)="selectedDateChanged(1, select1.value)" class="form-select form-control" aria-label="Default select example">
+    <option value="{{-1}}" (change)="selectedDateChanged(1,-1)" selected>Datum</option>
+    <option *ngFor="let date of dates; let i = index" value="{{i}}">{{date}}</option>
+  </select>
+  <span class="input-group-text">Vergleichen mit</span>
+  <select #select2 (change)="selectedDateChanged(2, select2.value)" class="form-select form-control" aria-label="Default select example">
+    <option value="{{-1}}" selected>Datum</option>
+    <option *ngFor="let date of dates; let i = index" value="{{i}}">{{date}}</option>
+  </select>
+</div>
+
+<div class="legend-wrapper">
+  <div class="legend-item" id="f1">
+    <span>Forecast 1</span>
+  </div>
+  <div class="legend-item" id="f2">
+    <span>Forecast 2</span>
+  </div>
+  <div class="legend-item" id="f3">
+    <span>Forecast 3</span>
+  </div>
+</div>
+
+<div class="block-wrapper">
+  <div *ngFor="let bs of blockcontents[0]; let i = index" class="{{vBlockClass}}">
+    <div [style]="bs"></div>
+    <p>{{blockcontents[1][i]}}</p>
+  </div>
+</div>
